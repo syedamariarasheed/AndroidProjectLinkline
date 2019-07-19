@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <array name="gen">
+        <item>Rock</item>
+        <item>pop</item>
+        <item>sufi</item>
+        <item>folk</item>
+        <item>jazz</item>
+    </array>
+</resources>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:background="#FAFAFA"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="#FFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true"
+        >
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#302A2E"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+        </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="26dp"
+                android:background="@drawable/ic_local_activity_black_24dp"/>
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffff"
+            android:textSize="10dp"
+            tools:text="Event " />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="100dp"
+            android:textAlignment="center"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#302A2E"
+            android:textSize="17dp"
+            tools:text="10/25/2018  10:23:22 AM " />
+        <Button
+            android:onClick="Show"
+            android:id="@+id/btninfo"
+            android:layout_width="100dp"
+            android:textAlignment="center"
+            android:text="details below"
+            android:textColor="#ffff"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="50dp"
+            android:background="#e6db18"
+            android:textSize="9dp"/>
+
+
+
+       <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+           android:id="@+id/myContent"
+           android:background="#ffff"
+           android:layout_marginTop="130dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:ael_expanded="false"
+           app:ael_duration="300"
+           app:ael_interpolator="accelerate"
+           app:ael_orientation="vertical"
+           >
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginBottom="140dp"
+               android:layout_marginRight="190dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/ic_pin_drop_black_24dp"
+               />
+
+           <TextView
+               android:id="@+id/textViewLoc"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="60dp"
+               android:layout_marginBottom="332dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="13dp"
+               android:text="Location"
+               android:textColor="#302A2E"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="20dp"
+               android:layout_marginBottom="120dp"
+               android:layout_marginRight="50dp"
+               android:layout_marginTop="40dp"
+               android:text="Organize by:"
+               android:textStyle="bold"
+               android:textColor="#302A2E"/>
+
+
+           <TextView
+               android:id="@+id/textViewOr"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="60dp"
+               android:layout_marginBottom="290dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="60dp"
+               android:text="Admin"
+               android:textColor="#302A2E"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="20dp"
+               android:layout_marginBottom="80dp"
+               android:layout_marginRight="50dp"
+               android:layout_marginTop="80dp"
+               android:text="Category:"
+               android:textStyle="bold"
+               android:textColor="#302A2E"/>
+
+
+           <TextView
+               android:id="@+id/textViewCat"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="60dp"
+               android:layout_marginBottom="246dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="100dp"
+               android:text="Admin"
+               android:textColor="#302A2E"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="20dp"
+               android:layout_marginBottom="40dp"
+               android:layout_marginRight="50dp"
+               android:layout_marginTop="120dp"
+               android:text="Maximum Attendees:"
+               android:textStyle="bold"
+               android:textColor="#302A2E"/>
+
+           <TextView
+               android:id="@+id/textViewMin"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="60dp"
+               android:layout_marginBottom="110dp"
+               android:layout_marginRight="50dp"
+               android:layout_marginTop="140dp"
+               android:text="Admin"
+               android:textColor="#302A2E"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="20dp"
+               android:layout_marginBottom="95dp"
+               android:layout_marginRight="50dp"
+               android:layout_marginTop="165dp"
+               android:text="Responsible for all Activities:"
+               android:textStyle="italic"
+               android:textColor="#302A2E"/>
+
+           <TextView
+               android:id="@+id/textViewRes"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="60dp"
+               android:layout_marginBottom="155dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="190dp"
+               android:text="Admin:"
+               android:textColor="#302A2E"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="55dp"
+               android:layout_marginBottom="70dp"
+               android:layout_marginRight="40dp"
+               android:layout_marginTop="220dp"
+               android:text="Contact For further Details"
+               android:textColor="#008000"/>
+
+
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginLeft="230dp"
+               android:layout_marginBottom="140dp"
+               android:layout_marginRight="190dp"
+               android:layout_marginTop="210dp"
+               android:background="@drawable/ic_call_end_black_24dp"/>
+
+
+           <TextView
+               android:id="@+id/textViewPh"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="60dp"
+               android:layout_marginBottom="100dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="244dp"
+               android:text=""
+               android:textColor="#008000"/>
+
+
+
+           <TextView
+               android:id="@+id/textViewEmail"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="60dp"
+               android:layout_marginBottom="80dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="265dp"
+               android:text=""
+               android:textColor="#008000"/>
+
+
+           <TextView
+               android:id="@+id/textViewMes"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="20dp"
+               android:layout_marginBottom="4dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="295dp"
+               android:inputType="textMultiLine"
+               android:text=""
+               android:textColor="#20B2AA"/>
+
+
+
+       </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+   </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
